@@ -1,0 +1,18 @@
+<div class="container" [@fade]>
+  <br>
+<form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm.value)">
+  <div class="mb-3">
+    <label for="inputEmail" class="form-label">Email address</label>
+    <input type="email" name="email" class="form-control" id="inputEmail" ngModel>
+  </div>
+  <div class="mb-3">
+    <label for="inputEmail" class="form-label">Full name</label>
+    <input type="text" name="fName" class="form-control" id="inputName" ngModel>
+  </div>
+  <div class="mb-3">
+    <label for="inputEmail" class="form-label">Username</label>
+    <input type="text" name="uName" class="form-control" id="inputUsername" ngModel>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

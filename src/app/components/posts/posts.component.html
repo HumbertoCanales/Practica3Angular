@@ -1,0 +1,8 @@
+
+  <div class="card" [@fade] *ngFor="let post of arrPosts">
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}</h5>
+      <p class="card-text">{{post.body}}</p>
+      <p class="card-text"><small class="text-muted">Post Id: {{post.id}}</small></p>
+    </div>
+  </div>
